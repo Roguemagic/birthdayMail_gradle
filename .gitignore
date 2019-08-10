@@ -1,0 +1,20 @@
+# Created by .ignore support plugin (hsz.mobi)
+#package files
+*.jar
+*.zip
+*.rar
+
+#logs
+*.log
+
+#IntelliJ specify files
+.idea
+
+#gradle files
+.gradle
+
+#lib
+/lib/
+
+#Build outpu
+/build

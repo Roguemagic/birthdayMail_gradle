@@ -1,4 +1,4 @@
-package com.mail;
+package com.mail.utils;
 
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -15,7 +15,7 @@ public class GetMimeMessage {
      * @throws MessagingException
      * @throws AddressException
      */
-    public static MimeMessage getMimeMessage(Session session, String content, String recipientAddress, String senderAddress) throws Exception{
+    public MimeMessage getMimeMessage(Session session, String content, String recipientAddress, String senderAddress) throws Exception{
         //创建一封邮件的实例对象
         MimeMessage msg = new MimeMessage(session);
         //设置发件人地址

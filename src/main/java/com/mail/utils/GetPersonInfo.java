@@ -1,7 +1,7 @@
-package com.mail;
+package com.mail.utils;
 
 public class GetPersonInfo {
-    public static int getMonth(String personInfo) throws Exception{
+    public int getMonth(String personInfo) throws Exception{
         String[] personStr=personInfo.split(",");
         int birthmonth=0;
         if(personStr.length==4){
@@ -15,7 +15,7 @@ public class GetPersonInfo {
         return  birthmonth;
     }
 
-    public static int getDay(String personInfo) throws Exception{
+    public int getDay(String personInfo) throws Exception{
         String[] personStr=personInfo.split(",");
         int birthmtday=0;
         if(personStr.length==4){
@@ -29,12 +29,12 @@ public class GetPersonInfo {
         return birthmtday;
     }
 
-    public static String getMailAdres(String personInfo) throws Exception{
+    public String getMailAdres(String personInfo) throws Exception{
         String[] personStr=personInfo.split(",");
         return personStr[3];
     }
 
-    public static String getName(String personInfo) throws Exception {
+    public String getName(String personInfo) throws Exception {
         String[] personStr = personInfo.split(",");
         return personStr[1];
     }
